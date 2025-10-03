@@ -154,7 +154,7 @@ This application was developed during the COVID-19 pandemic in 2020 to facilitat
 
 ## 👨‍💻 Developer
 
-**Developed by**: Mainong Jenbum  
+**Developed by**: [[Mainong Jenbum](https://jenbum.com)]  
 **Year**: 2020  
 **Purpose**: COVID-19 Travel Pass Management  
 **Location**: Changlang District, Arunachal Pradesh, India
