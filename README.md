@@ -1,7 +1,14 @@
 # 🚗 ePass Bordumsa Admin
+This project was developed during the COVID-19 pandemic in 2020 as part of the ePass system for managing travel permits in Bordumsa, Arunachal Pradesh. The project is no longer being actively maintained.
 
-> **⚠️ Project Status: No Longer Maintained**  
-> This project was developed during the COVID-19 pandemic in 2020 as part of the ePass system for managing travel permits in Bordumsa, Arunachal Pradesh. The project is no longer being actively maintained.
+<div align="center">
+**A digital solution for travel pass applications during COVID-19 pandemic**
+
+*Developed for the residents of Changlang District, Arunachal Pradesh*
+
+[![Status](https://img.shields.io/badge/Status-No%20Longer%20Maintained-red?style=for-the-badge)](#-project-status)
+
+</div>
 
 ## 📱 Overview
 
