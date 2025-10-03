@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:fillViewport = "true">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation="vertical">
+        <!-- Header -->
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rect_stroke_white">
+                <ImageView
+                    android:layout_width = "56dp"
+                    android:layout_height = "56dp"
+                    android:src="@drawable/ic_govt"/>
+                <View
+                    android:layout_width = "1dp"
+                    android:layout_height = "match_parent"
+                    android:background="#2FFFFFFF" />
+                <LinearLayout
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:fontFamily = "sans-serif-black"
+                        android:gravity = "center"
+                        android:text = "GOVERNMENT OF ARUNACHAL PRADESH"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                        android:textColor = "@android:color/white"
+                        android:textSize = "10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_authority_office_name"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:fontFamily = "sans-serif-black"
+                        android:gravity = "center"
+                        android:text = "OFFICE OF THE EXTRA ASSISTANT COMMISSIONER"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                        android:textColor = "@android:color/white"
+                        android:textSize = "10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_authority_office_address"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:fontFamily = "sans-serif-black"
+                        android:gravity = "center"
+                        android:text = "BORDUMSA::DISTRICT CHANGLANG"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                        android:textColor = "@android:color/white"
+                        android:textSize = "10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width = "1dp"
+                    android:layout_height = "match_parent"
+                    android:background="#2FFFFFFF" />
+
+                <TextView
+                    android:id="@+id/tv_authority_designation_abbr"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1"
+                    android:fontFamily = "sans-serif-black"
+                    android:gravity = "center"
+                    android:text = "ADC"
+                    android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                    android:textColor = "@android:color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- END of HEADER -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/rv_request"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginEnd = "16dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_no_item"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:text="No new request!"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

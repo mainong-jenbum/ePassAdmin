@@ -1,0 +1,11 @@
+<resources>
+    <string name = "app_name">e-Pass Admin</string>
+    <string name = "sample_permission">In accordance with the MHA\'s order no. 40–3/2020-DM-I(A) dated 1st May, 2020 on interstate movement for medical reasons, permission is hereby ganted to the following persons of Jyotsnapur, Diyun District Changlang, Arunachal Pradesh.</string>
+    <string name = "t_c_1">That they should return to Bordumsa within 24 (twenty four) hours</string>
+    <string name = "t_c_2"><![CDATA[All Covid-19 related guidelines/SOP and restrictions to be strictly followed i.e, social distancing, mandatory wearing of face mask & gloves, vehicle sanitization etc.]]></string>
+    <string name = "t_c_3">That they will be kept on Facility quarantine centre if Driver and patient come back together.</string>
+    <string name = "title_new_req">NEW REQUEST</string>
+    <string name = "title_approved">APPROVED</string>
+    <string name = "press_again_exit_app">Press again to exit</string>
+    <string name = "title_settings">Settings</string>
+</resources>

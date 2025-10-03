@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    xmlns:tools = "http://schemas.android.com/tools"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:fillViewport = "true">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="vertical">
+        <!-- Header -->
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rect_stroke_white">
+                <ImageView
+                    android:layout_width = "56dp"
+                    android:layout_height = "56dp"
+                    android:src="@drawable/ic_govt"/>
+                <View
+                    android:layout_width = "1dp"
+                    android:layout_height = "match_parent"
+                    android:background="#2FFFFFFF" />
+                <LinearLayout
+                    android:layout_width = "0dp"
+                    android:layout_height = "wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:fontFamily = "sans-serif-black"
+                        android:gravity = "center"
+                        android:text = "GOVERNMENT OF ARUNACHAL PRADESH"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                        android:textColor = "@android:color/white"
+                        android:textSize = "10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_authority_office_name"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:fontFamily = "sans-serif-black"
+                        android:gravity = "center"
+                        android:text = "OFFICE OF THE EXTRA ASSISTANT COMMISSIONER"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                        android:textColor = "@android:color/white"
+                        android:textSize = "10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_authority_office_address"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:fontFamily = "sans-serif-black"
+                        android:gravity = "center"
+                        android:text = "BORDUMSA::DISTRICT CHANGLANG"
+                        android:textAllCaps = "true"
+                        android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                        android:textColor = "@android:color/white"
+                        android:textSize = "10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width = "1dp"
+                    android:layout_height = "match_parent"
+                    android:background="#2FFFFFFF" />
+
+                <TextView
+                    android:id="@+id/tv_authority_designation_abbr"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1"
+                    android:fontFamily = "sans-serif-black"
+                    android:gravity = "center"
+                    android:text = "ADC"
+                    android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                    android:textColor = "@android:color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- END of HEADER -->
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:id="@+id/tv_permit_id"
+                android:layout_width = "0dp"
+                android:layout_weight="1"
+                android:layout_height = "wrap_content"
+                android:text="NO.B/JUD-18(COVID-19)/2020/12345"
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_permit_approval_date"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:textSize="10sp"
+                android:layout_marginStart="8dp"
+                android:text="Dated Bordumsa, the 8th May, 2020" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="e-PASS"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width = "50dp"
+            android:layout_height = "1dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_permit_detail"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text="@string/sample_permission"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <FrameLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation = "horizontal"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/rect_stroke_black"
+                    android:padding="8dp"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:text="SLNO"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width = "0dp"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_height = "wrap_content"
+                        android:text="Name of the person"/>
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Remarks"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id = "@+id/rv_traveller"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart = "16dp"
+                    android:layout_marginEnd = "16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_approved"
+                android:layout_width = "100dp"
+                android:layout_height = "100dp"
+                android:layout_gravity="center"
+                android:alpha="0.5"
+                android:src="@drawable/approved" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text="Details route &amp; date of journey"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <View
+            android:layout_width = "150dp"
+            android:layout_height = "1dp"
+            android:background="@android:color/black"
+            android:layout_gravity="center"/>
+        <GridLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:columnCount="3"
+            android:rowCount="6"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="Date of Journey"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text=":"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_doj"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="10-05-20"
+                android:layout_columnWeight="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="Vehicle Registration No"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text=":"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_vehicle_rc"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="AS23T-3771"
+                android:layout_columnWeight="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="Name of the Driver"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text=":"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_driver_name"
+                android:layout_width = "0dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_height = "wrap_content"
+                android:text="Mr Driver"
+                android:layout_columnWeight="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="Driver Contact"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text=":"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_driver_contact"
+                android:layout_width = "0dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_height = "wrap_content"
+                android:text="9999999999"
+                android:layout_columnWeight="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Route of journey"
+                android:textAllCaps = "true"
+                android:textColor = "@android:color/black"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text=":"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_route"
+                android:layout_width = "0dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_height = "wrap_content"
+                android:text="Via this and via ffsfffasfds asfdafthat"
+                android:layout_columnWeight="1"
+                android:maxLines="3"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:paddingEnd="8dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Authority"
+                android:textAllCaps = "true"
+                android:textColor = "@android:color/black"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text=":"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width = "0dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_height = "wrap_content"
+                android:text="Bordumsa"
+                android:layout_columnWeight="1"
+                android:maxLines="3"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:paddingEnd="8dp"
+                android:textColor="@android:color/black"/>
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_supporting_doc"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            app:cardElevation ="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp">
+            <RelativeLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content">
+                <TextView
+                    android:id="@+id/tv_doc_title"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:text="Supporting documents"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black" />
+                <View
+                    android:id="@+id/divider_doc"
+                    android:layout_width = "100dp"
+                    android:layout_height = "1dp"
+                    android:layout_below="@+id/tv_doc_title"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray"
+                    android:layout_gravity="center"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_doc"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/divider_doc"
+                    tools:listitem="@layout/view_file_item" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            app:cardElevation ="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="24dp">
+            <RelativeLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content">
+                <TextView
+                    android:id="@+id/tv_tc_title"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:text="Terms &amp; conditions"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/black" />
+                <View
+                    android:id="@+id/divider_tc"
+                    android:layout_width = "100dp"
+                    android:layout_height = "1dp"
+                    android:layout_below="@+id/tv_tc_title"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray"
+                    android:layout_gravity="center"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_terms"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/divider_tc"
+                    tools:listitem="@layout/view_terms_condition_item" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/ll_container_action"
+            android:visibility="visible"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width = "100dp"
+                android:layout_height = "wrap_content"
+                android:text="Approve"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width = "100dp"
+                android:layout_marginStart="8dp"
+                android:layout_height = "wrap_content"
+                android:text="Reject"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_authority"
+            android:visibility="gone"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="16dp">
+            
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:transitionName="qr_code"
+                android:layout_width = "120dp"
+                android:layout_height = "120dp"
+                android:src="@drawable/pending_approval"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_authority_sign"
+                    android:layout_width = "72dp"
+                    android:layout_height = "72dp"
+                    android:src="@drawable/ic_govt"/>
+
+                <TextView
+                    android:id="@+id/tv_authority_name"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text="MINGA SHERPA, IAS"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_authority_designation"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="ADDITIONAL DEPUTY COMMISSIONER" />
+                <TextView
+                    android:id="@+id/tv_authority_address"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textSize="10sp"
+                    android:text="BORDUMSA" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

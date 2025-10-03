@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:orientation = "vertical" android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_container_header"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:background="@color/md_blue_grey_700"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:gravity="bottom">
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_weight="1"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id = "@+id/tv_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-black"
+                android:text = "Account Settings"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/white"
+                android:textStyle = "bold" />
+            <View
+                android:layout_width = "100dp"
+                android:layout_height = "2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id = "@+id/tv_description"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-condensed"
+                android:text = "It is recommended to update your password every few days. Kindly contact Department of Information Technology, Bordumsa, in case of concern."
+                android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                android:textColor = "@android:color/white"
+                android:textSize = "12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width = "120dp"
+            android:layout_height = "96dp"
+            android:src="@drawable/ic_govt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "16dp"
+            android:fontFamily = "sans-serif-condensed-medium"
+            android:text = "NEW PASSWORD"
+            android:textAllCaps="true"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+            android:textColor = "@color/md_blue_grey_700" />
+        <EditText
+            android:id="@+id/et_pass1"
+            android:layout_width = "match_parent"
+            android:layout_height = "45dp"
+            android:background="@drawable/bg_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "16dp"
+            android:layout_marginTop = "16dp"
+            android:fontFamily = "sans-serif-condensed-medium"
+            android:text = "confirm password"
+            android:textAllCaps="true"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+            android:textColor = "@color/md_blue_grey_700" />
+        <EditText
+            android:id="@+id/et_pass2"
+            android:layout_width = "match_parent"
+            android:layout_height = "45dp"
+            android:background="@drawable/bg_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update_password"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="UPDATE Password"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width = "100dp"
+            android:layout_height = "45dp"
+            android:text="Logout"
+            android:gravity="center"
+            android:background="@drawable/bg_text"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

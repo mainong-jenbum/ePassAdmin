@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_approve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        android:visibility="visible"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_qr_code"
+                        android:transitionName="qr_code"
+                        android:layout_width="80dp"
+                        android:src="@drawable/pending_approval"
+                        android:layout_height="80dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/tv_ref_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:text="#213456" />
+
+                        <TextView
+                            android:id="@+id/tv_route"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Route"
+                            android:maxLines="2"
+                            android:layout_below="@+id/tv_ref_no"
+                            android:textColor="#a1a1a1"
+                            android:ellipsize="end"
+                            android:layout_marginBottom="1dp"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TRAVEL DATE"
+                            android:textSize="12sp"
+                            android:layout_marginEnd="8dp"
+                            android:textColor="#a1a1a1" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24th March, 2020"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/black" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAVELER#"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="#a1a1a1" />
+
+                <TextView
+                    android:id="@+id/tv_traveller_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APPLICANT#"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="4dp"
+                    android:textColor="#a1a1a1"
+                    android:layout_marginStart="16dp"/>
+
+                <TextView
+                    android:id="@+id/tv_applicant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Applicant name"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/black" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_reject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        android:visibility="gone"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/iv_reject_qr"
+                android:transitionName="qr_code"
+                android:layout_width="80dp"
+                android:src="@drawable/pending_approval"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width = "0dp"
+                android:layout_weight="1"
+                android:layout_height = "match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_reject_id"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="#COVID123"
+                    android:textSize="10sp"
+                    android:ellipsize="end"
+                    android:gravity="end"/>
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Reject Reason"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"/>
+
+
+                <TextView
+                    android:id="@+id/tv_reject_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reject reason"
+                    android:maxLines="3"
+                    android:textSize="12sp"
+                    android:textColor="#a1a1a1"
+                    android:ellipsize="end"
+                    android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
