@@ -152,6 +152,25 @@ This application was developed during the COVID-19 pandemic in 2020 to facilitat
 - **Performance**: Optimized image loading and memory management
 - **Security**: Secure API communication and data storage
 
+## 🤝 Contributing
+
+> **⚠️ Important Notice**: This project is **no longer maintained**. It was developed as a specific solution for COVID-19 travel restrictions in 2020.
+
+While the project is not actively maintained, the codebase serves as a reference for:
+- Android multi-step form implementation
+- RESTful API integration patterns
+- Material Design implementation
+- Firebase integration examples
+
+---
+
+## 📄 License
+
+This project is developed for educational and reference purposes. Please ensure compliance with local regulations and data protection laws when using or modifying this code.
+
+---
+
+
 ## 👨‍💻 Developer
 
 **Developed by**: [[Mainong Jenbum](https://jenbum.com)]  
