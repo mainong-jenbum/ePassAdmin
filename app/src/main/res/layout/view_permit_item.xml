@@ -36,7 +36,7 @@
                         android:id="@+id/iv_qr_code"
                         android:transitionName="qr_code"
                         android:layout_width="80dp"
-                        android:src="@drawable/pending_approval"
+                        android:src="@drawable/ic_user"
                         android:layout_height="80dp"/>
 
                 </LinearLayout>

@@ -113,6 +113,28 @@ The app features a modern Material Design interface with:
 - **Real-time Updates**: Automatic refresh for new applications
 - **Responsive Design**: Optimized for various screen sizes
 
+### 📸 App Screenshots
+
+<div align="center">
+  <h3>🏠 Splash Screen</h3>
+  <img src="screenshots/SplashScreen.jpg" alt="Splash Screen" width="300"/>
+  
+  <h3>🔐 Admin Login</h3>
+  <img src="screenshots/AdminLogin.jpg" alt="Admin Login Screen" width="300"/>
+  
+  <h3>📋 Pending Applications</h3>
+  <img src="screenshots/ePassPendingApproval.jpg" alt="Pending Approval Screen" width="300"/>
+  
+  <h3>📄 Pass Details</h3>
+  <img src="screenshots/PassDetails.jpg" alt="Pass Details Screen" width="300"/>
+  
+  <h3>📋 Terms & Conditions</h3>
+  <img src="screenshots/PassDetailsTerms.jpg" alt="Terms and Conditions" width="300"/>
+  
+  <h3>⚙️ Account Settings</h3>
+  <img src="screenshots/AccountSettings.jpg" alt="Account Settings" width="300"/>
+</div>
+
 ## 🔒 Permissions
 
 The app requires the following permissions:
