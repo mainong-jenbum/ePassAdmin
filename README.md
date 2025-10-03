@@ -152,24 +152,43 @@ This application was developed during the COVID-19 pandemic in 2020 to facilitat
 - **Performance**: Optimized image loading and memory management
 - **Security**: Secure API communication and data storage
 
-### Future Enhancements (Not Implemented)
-- Push notifications for new applications
-- Advanced analytics and reporting
-- Multi-language support
-- Offline data synchronization
+## 👨‍💻 Developer
 
-## 📄 License
-
-This project was developed for the Government of Arunachal Pradesh during the COVID-19 pandemic. All rights reserved.
-
-## 👥 Contributing
-
-**Note**: This project is no longer being maintained. It is preserved for historical reference and educational purposes.
-
-## 📞 Contact
-
-For questions about this project or the ePass system, please contact the development team.
+**Developed by**: Mainong Jenbum  
+**Year**: 2020  
+**Purpose**: COVID-19 Travel Pass Management  
+**Location**: Changlang District, Arunachal Pradesh, India
 
 ---
 
-*Developed with ❤️ during the COVID-19 pandemic to help manage travel permits and ensure public safety in Arunachal Pradesh, India.*
+## 🏥 Project Status
+
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-No%20Longer%20Maintained-red?style=for-the-badge)
+
+**This project is no longer being maintained.**
+
+*Developed during COVID-19 pandemic (2020) for travel pass management in Changlang District, Arunachal Pradesh. The application served its purpose during the pandemic and is now archived for reference.*
+
+</div>
+
+---
+
+## 📞 Contact
+
+For questions about this project or to discuss the implementation:
+
+- **Email**: [mainong.jenbum@gmail.com]
+- **GitHub**: [[@mainong-jenbum](https://github.com/mainong-jenbum)]
+- **LinkedIn**: [[Mainong Jenbum](https://www.linkedin.com/in/mainongjenbum/)]
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the people of Changlang District, Arunachal Pradesh**
+
+*During the challenging times of COVID-19 pandemic*
+
+</div>
